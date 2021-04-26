@@ -33,7 +33,7 @@ public class Piloto implements Serializable {
     private Escuderia escuderia;
 
     
-
+    private String fotoPiloto;
     private Integer numPodios;
     private Integer numPuntos;
     private Integer numPoles;
@@ -44,7 +44,7 @@ public class Piloto implements Serializable {
 
     }
 
-    public Piloto (String nombre, Escuderia escuderia, String pais, Integer numPodios, Integer numPuntos, Integer posicion, Integer numPoles) {
+    public Piloto (String nombre, String fotoPiloto, Escuderia escuderia, String pais, Integer numPodios, Integer numPuntos, Integer posicion, Integer numPoles) {
         super();
         this.nombre = nombre;
         this.pais = pais;
@@ -53,6 +53,7 @@ public class Piloto implements Serializable {
         this.posicion = posicion;
         this.numPoles = numPoles;
         this.escuderia = escuderia;
+        this.fotoPiloto = fotoPiloto;
     }
 
     public Long getId() {
@@ -118,4 +119,13 @@ public class Piloto implements Serializable {
     public void setEscuderia(Escuderia escuderia) {
         this.escuderia = escuderia;
     }
+
+    public String getFotoPiloto() {
+        return fotoPiloto;
+    }
+
+    public void setFotoPiloto(String fotoPiloto) {
+        this.fotoPiloto = fotoPiloto;
+    }
+    
 }
