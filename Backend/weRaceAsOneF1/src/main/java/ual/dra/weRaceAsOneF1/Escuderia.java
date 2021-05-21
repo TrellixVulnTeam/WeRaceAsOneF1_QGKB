@@ -2,7 +2,6 @@ package ual.dra.weRaceAsOneF1;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -54,6 +53,7 @@ public class Escuderia implements Serializable {
         this.numVueltasRapidas = numVueltasRapidas;
         this.escudo = escudo;
         this.pilotos = pilotos;
+        this.motor = motor;
     }
 
     public Long getId() {

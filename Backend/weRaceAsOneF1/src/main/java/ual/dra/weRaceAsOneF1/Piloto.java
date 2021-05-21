@@ -22,10 +22,8 @@ public class Piloto implements Serializable {
     private Long id;
 
     @NotNull
-    @Size(max = 65)
     private String nombre;
 
-    @Size(max = 65)
     private String pais;
 
     @ManyToOne
