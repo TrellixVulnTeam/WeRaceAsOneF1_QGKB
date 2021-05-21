@@ -1,0 +1,47 @@
+* {
+    place-items: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+nav a {
+    padding: 0.7rem;
+    text-decoration: none;
+    margin-left: .5rem;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    place-items: center;
+}
+
+nav {
+    place-items: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+}
+
+img {
+    padding: 0.7rem;
+    text-decoration: none;
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    place-items: center;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #e10700a8;
+}
+
+nav a.active {
+    background-color: black;
+}

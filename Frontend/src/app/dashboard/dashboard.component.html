@@ -1,0 +1,14 @@
+<h1>Pilotos</h1>
+<div class="drivers">
+    <a *ngFor="let driver of drivers" (click) = "pilotoSeleccionado(driver)">
+    
+    <img class="imagen" src={{driver.fotoPiloto}} alt="" width="100" height="100" />
+    <div class="container">
+        <p> {{driver.nombre}}</p>
+      </div>
+    </a>
+    
+</div>
+
+
+<app-driver-detail *ngIf = "selectedDriver" [driver] = "selectedDriver" [escuderia] = "selectedDriverEscuderia"></app-driver-detail>

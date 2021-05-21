@@ -1,0 +1,26 @@
+<h1>Escuderias</h1>
+
+<div class="card">
+    <li *ngFor="let escuderia of escuderias">
+        <img src={{escuderia.escudo}} class="imagen">
+        <div class="container">
+            <div class="container2">
+                <h3><b>{{escuderia.nombre}}</b></h3>
+            </div>
+            <div class="informacion">
+                <p>Jefe: {{escuderia.jefe}}</p>
+                <p>Unidad de potencia: {{escuderia.motor}}</p>
+                <p>Mundiales de constructores: {{escuderia.numMundiales}}</p>
+                <p>Poles: {{escuderia.numPoles}}</p>
+                <p>Podios: {{escuderia.numPodios}}</p>
+                <p>Vueltas rápidas: {{escuderia.numVueltasRapidas}}</p>
+            </div>
+
+
+        </div>
+
+    </li>
+
+</div>
+
+<!-- <app-driver-detail [driver]="selectedDriver"></app-driver-detail> -->
